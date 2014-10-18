@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void calc_HI ();
+float calc_HI ();
 
     int T;
     int RH;
@@ -35,7 +35,7 @@ int main()
     return 0;
 }
 
-    void calc_HI ()
+    float calc_HI ()
 
 {   float HI;
     float ADJ;
@@ -70,6 +70,6 @@ int main()
     else
             {   printf ("HI = %f\n", HI);
                 printf ("\tT = %d\n\tRH = %d\n", T, RH); }
-    }
-                                          
-}
+           }
+    
+return HI ;}
